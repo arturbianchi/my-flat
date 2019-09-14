@@ -6,13 +6,14 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { GalleryModule } from '@ngx-gallery/core';
 import { HomeComponent } from './home/home.component';
-import { MatToolbarModule } from '@angular/material/toolbar';
-import {MatIconModule} from '@angular/material/icon';
+import { SpecificationComponent } from './specification/specification.component';
+import { MatToolbarModule, MatIconModule, MatTabsModule, MatMenuModule, MatButtonModule, MatFormFieldModule, MatCardModule } from '@angular/material';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    SpecificationComponent
   ],
   imports: [
     BrowserModule,
@@ -20,7 +21,12 @@ import {MatIconModule} from '@angular/material/icon';
     BrowserAnimationsModule,
     GalleryModule,
     MatToolbarModule,
-    MatIconModule
+    MatIconModule,
+    MatTabsModule,
+    MatFormFieldModule,
+    MatButtonModule,
+    MatMenuModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
